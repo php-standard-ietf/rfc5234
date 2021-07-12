@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Digit
     /**
      * 0-9
      */
-    const REGEX = '[\x30-\x39]';
+    public const REGEX = '[\x30-\x39]';
 }

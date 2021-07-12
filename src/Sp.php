@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Sp
     /**
      * Space
      */
-    const REGEX = '\x20';
+    public const REGEX = '\x20';
 }

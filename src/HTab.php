@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface HTab
     /**
      * Horizontal tab
      */
-    const REGEX = '\x09';
+    public const REGEX = '\x09';
 }

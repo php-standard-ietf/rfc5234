@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Cr
     /**
      * Carriage return
      */
-    const REGEX = '\x0D';
+    public const REGEX = '\x0D';
 }

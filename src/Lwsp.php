@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,6 +12,5 @@ interface Lwsp
     /**
      * linear white space (past newline)
      */
-    const REGEX = '('.Wsp::REGEX.'|'.CrLf::REGEX.Wsp::REGEX.')';
+    public const REGEX = '(' . Wsp::REGEX . '|' . CrLf::REGEX . Wsp::REGEX . ')';
 }
-

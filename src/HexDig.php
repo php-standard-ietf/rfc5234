@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface HexDig
     /**
      * DIGIT / "A" / "B" / "C" / "D" / "E" / "F"
      */
-    const REGEX = '('.Digit::REGEX.'|[\x41-\x46])';
+    public const REGEX = '(' . Digit::REGEX . '|[\x41-\x46])';
 }

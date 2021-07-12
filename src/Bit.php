@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Bit
     /**
      * 0 / 1
      */
-    const REGEX = '[0-1]';
+    public const REGEX = '[0-1]';
 }

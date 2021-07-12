@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Char
     /**
      * Any 7-bit US-ASCII character, excluding NUL
      */
-    const REGEX = '[\x01-\x7F]';
+    public const REGEX = '[\x01-\x7F]';
 }

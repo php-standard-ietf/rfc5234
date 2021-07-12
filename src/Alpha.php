@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Alpha
     /**
      * A-Z / a-z
      */
-    const REGEX = '[\x41-\x5A\x61-\x7A]';
+    public const REGEX = '[\x41-\x5A\x61-\x7A]';
 }

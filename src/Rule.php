@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -7,7 +9,7 @@ namespace IETF\Rfc5234;
  */
 interface Rule
 {
-    const CORE_RULES
+    public const CORE_RULES
         = [
             Alpha::class,
             Bit::class,

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface DQuote
     /**
      * " (Double Quote)
      */
-    const REGEX = '\x22';
+    public const REGEX = '\x22';
 }

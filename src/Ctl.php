@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Ctl
     /**
      * Controls
      */
-    const REGEX = '([\x00-\x1F]|\x7F)';
+    public const REGEX = '([\x00-\x1F]|\x7F)';
 }

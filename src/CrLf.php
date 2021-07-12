@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface CrLf
     /**
      * Internet standard newline
      */
-    const REGEX = Cr::REGEX.Lf::REGEX;
+    public const REGEX = (Cr::REGEX . Lf::REGEX);
 }

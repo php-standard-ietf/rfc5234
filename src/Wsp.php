@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface Wsp
     /**
      * White space
      */
-    const REGEX = '('.Sp::REGEX.'|'.HTab::REGEX.')';
+    public const REGEX = '(' . Sp::REGEX . '|' . HTab::REGEX . ')';
 }

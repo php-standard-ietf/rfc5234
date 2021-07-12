@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace IETF\Rfc5234;
 
 /**
@@ -10,5 +12,5 @@ interface VChar
     /**
      * Visible (printing) characters
      */
-    const REGEX = '[\x21-\x7E]';
+    public const REGEX = '[\x21-\x7E]';
 }
