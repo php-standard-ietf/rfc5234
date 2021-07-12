@@ -2,14 +2,21 @@
   "name": "php-standard-ietf/rfc5234",
   "type": "library",
   "description": "Standard IETF Rfc5234 transposed to PHP.",
+  "license": "BSD-3-Clause",
   "keywords": [
     "rfc5234",
     "ietf",
     "standard",
-    "interface"
+    "ABNF"
   ],
   "homepage": "https://github.com/php-standard-ietf/rfc-5234",
-  "license": "MIT",
+  "support": {
+    "email": "github-support@swarmtech.fr"
+  },
+  "config": {
+    "process-timeout": 600,
+    "sort-packages": true
+  },
   "authors": [
     {
       "name": "gary gitton",
@@ -23,7 +30,27 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "IETFUnitTest\\Rfc5234\\": "test/Unit/"
+      "IETFTest\\Rfc5234\\": "test/"
     }
+  },
+  "require": {
+    "php": "^7.3 || ~8.0.0"
+  },
+  "require-dev": {
+    "laminas/laminas-coding-standard": "^2.3",
+    "phpunit/phpunit": "^9.5",
+    "psalm/plugin-phpunit": "^0.15.1",
+    "vimeo/psalm": "^4.5.2"
+  },
+  "scripts": {
+    "check": [
+      "@cs-check",
+      "@test"
+    ],
+    "cs-check": "phpcs",
+    "cs-fix": "phpcbf",
+    "test": "phpunit --colors=always",
+    "test-coverage": "phpunit --colors=always --coverage-clover clover.xml",
+    "static-analysis": "psalm --shepherd --stats"
   }
 }
