@@ -12,5 +12,5 @@ interface CrLf
     /**
      * Internet standard newline
      */
-    public const REGEX = (Cr::REGEX . Lf::REGEX);
+    public const REGEX = Cr::REGEX . Lf::REGEX;
 }

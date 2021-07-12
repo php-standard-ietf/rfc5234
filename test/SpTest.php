@@ -7,6 +7,8 @@ namespace IETFTest\Rfc5234;
 use IETF\Rfc5234\Sp;
 use PHPUnit\Framework\TestCase;
 
+use function preg_match;
+
 class SpTest extends TestCase
 {
     public function examples(): array
@@ -23,9 +25,11 @@ class SpTest extends TestCase
      * @test
      * @dataProvider examples
      */
-    public function regex_with_examples($value, $expected): void
-    {
-        $actual = preg_match('/'.Sp::REGEX.'/', $value) === 1;
+    public function regexWillReturnExpectedResult(
+        string $value,
+        bool $expected
+    ): void {
+        $actual = preg_match('/' . Sp::REGEX . '/', $value) === 1;
 
         $this->assertEquals($expected, $actual, $value);
     }

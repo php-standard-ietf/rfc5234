@@ -7,6 +7,8 @@ namespace IETFTest\Rfc5234;
 use IETF\Rfc5234\Lf;
 use PHPUnit\Framework\TestCase;
 
+use function preg_match;
+
 class LfTest extends TestCase
 {
     public function examples(): array
@@ -22,9 +24,11 @@ class LfTest extends TestCase
      * @test
      * @dataProvider examples
      */
-    public function regex_with_examples($value, $expected): void
-    {
-        $actual = preg_match('/'.Lf::REGEX.'/', $value) === 1;
+    public function regexWillReturnExpectedResult(
+        string $value,
+        bool $expected
+    ): void {
+        $actual = preg_match('/' . Lf::REGEX . '/', $value) === 1;
 
         $this->assertEquals($expected, $actual, $value);
     }
