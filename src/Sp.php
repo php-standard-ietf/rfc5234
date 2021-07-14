@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Sp
 {
     /**
-     * Space
+     * ABNF: SP = %x20
      */
     public const REGEX = '\x20';
 }

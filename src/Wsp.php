@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Wsp
 {
     /**
-     * White space
+     * ABNF: WSP = SP / HTAB
      */
     public const REGEX = '(' . Sp::REGEX . '|' . HTab::REGEX . ')';
 }

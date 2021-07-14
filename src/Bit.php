@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Bit
 {
     /**
-     * 0 / 1
+     * ABNF: BIT = "0" / "1"
      */
-    public const REGEX = '[0-1]';
+    public const REGEX = '[\x30-\x31]';
 }

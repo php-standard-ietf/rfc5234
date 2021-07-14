@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface VChar
 {
     /**
-     * Visible (printing) characters
+     * ABNF: VCHAR = %x21-7E
      */
     public const REGEX = '[\x21-\x7E]';
 }

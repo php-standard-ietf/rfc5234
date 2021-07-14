@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Cr
 {
     /**
-     * Carriage return
+     * ABNF: CR = %x0D
      */
     public const REGEX = '\x0D';
 }

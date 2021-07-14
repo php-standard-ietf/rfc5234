@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Ctl
 {
     /**
-     * Controls
+     * ABNF: CTL = %x00-1F / %x7F
      */
     public const REGEX = '([\x00-\x1F]|\x7F)';
 }

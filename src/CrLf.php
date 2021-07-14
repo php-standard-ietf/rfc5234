@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface CrLf
 {
     /**
-     * Internet standard newline
+     * ABNF: CRLF = CR LF
      */
     public const REGEX = Cr::REGEX . Lf::REGEX;
 }

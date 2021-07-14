@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface DQuote
 {
     /**
-     * " (Double Quote)
+     * ABNF: DQUOTE = %x22
      */
     public const REGEX = '\x22';
 }

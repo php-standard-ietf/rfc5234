@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Char
 {
     /**
-     * Any 7-bit US-ASCII character, excluding NUL
+     * ABNF: CHAR = %x01-7F
      */
     public const REGEX = '[\x01-\x7F]';
 }

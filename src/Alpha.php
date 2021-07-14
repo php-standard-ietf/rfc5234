@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Alpha
 {
     /**
-     * A-Z / a-z
+     * ABNF: ALPHA = %x41-5A / %x61-7A
      */
     public const REGEX = '[\x41-\x5A\x61-\x7A]';
 }

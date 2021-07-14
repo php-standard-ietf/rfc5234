@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Octet
 {
     /**
-     * 8 bits of data
+     * ABNF: OCTET = %x00-FF
      */
     public const REGEX = '[\x00-\xFF]';
 }

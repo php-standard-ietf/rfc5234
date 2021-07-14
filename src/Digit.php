@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Digit
 {
     /**
-     * 0-9
+     * ABNF: DIGIT = %x30-39
      */
     public const REGEX = '[\x30-\x39]';
 }

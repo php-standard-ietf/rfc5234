@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Lf
 {
     /**
-     * Linefeed
+     * ABNF: LF = %x0A
      */
     public const REGEX = '\x0A';
 }

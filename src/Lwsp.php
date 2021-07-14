@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface Lwsp
 {
     /**
-     * linear white space (past newline)
+     * ABNF: LWSP = *(WSP / CRLF WSP)
      */
     public const REGEX = '(' . Wsp::REGEX . '|' . CrLf::REGEX . Wsp::REGEX . ')';
 }

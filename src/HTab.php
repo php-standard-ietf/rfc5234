@@ -10,7 +10,7 @@ namespace IETF\Rfc5234;
 interface HTab
 {
     /**
-     * Horizontal tab
+     * ABNF: HTAB = %x09
      */
     public const REGEX = '\x09';
 }
